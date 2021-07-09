@@ -1,0 +1,564 @@
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+} 
+
+
+html{
+
+font-size: 66.6%;
+
+
+}
+
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h1 {
+
+font-size: 2.6rem;
+
+}
+
+li,button,label,input p{
+
+font-size: 2rem;
+
+}
+
+
+h2 {
+
+     font-size:4.8rem;
+
+}
+
+
+h3 {
+
+    font-size: 3rem;
+    font-weight: normal;
+
+}
+
+h4,h5 {
+
+font-size: 2.8rem;
+
+
+
+}
+a {
+
+
+    color: #fff;
+    text-decoration: none;
+}
+
+
+button {
+
+padding: 2rem 6rem;
+background: #4c6e97;
+border: none;
+color: white;
+font-size: 1.5rem;
+cursor: pointer;
+transform: background 0.5s ease-in-out; /* used to make the time for the background in button and 
+buttonhover */
+
+
+}
+
+
+button:hover {
+
+background: #27394e;
+
+}
+
+
+
+/* nav sction wth hero this is cooment */
+
+
+
+
+.main-head {
+
+
+background: #131c27;
+color: #fff;
+position: sticky;  /* to make nav sticky like move when screeo down */
+top: 0px;  /* to make nav sticky like move when screeo down */
+z-index: 3;  /* wil make the sticky the bar on top */
+
+
+}
+
+
+nav {
+
+
+display: flex;   /* to make space btween */
+align-items: center;
+width: 90%;
+margin: auto;
+padding: 2rem;
+min-height: 10vh; /* the mimix size*/
+flex-wrap: wrap; /* make the nav donw the log treavel word*/
+
+
+}
+
+nav ul {
+
+display: flex;  /* t  make space the element line */
+flex:1 1 40rem;
+justify-content: space-around;
+list-style: none;
+align-items: center;  /* to  make space from above the element line */
+
+
+
+}
+
+
+#logo {
+
+flex: 1 1 40rem;   /* t make space in the element line */
+font-family: 'Coda Caption', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+.hero  {
+
+min-height: 90vh;
+background: linear-gradient(rgba(0,0,0,0.5), transparent),
+ url(img/landing-page.jpg);
+background-repeat:no-repeat; /* the piture make no space  */
+background-size: cover;  /* to clear photoe */
+background-position: center; /* to make ptire movng areound */
+color: #fff;
+display: flex; /* to make in the middle */
+flex-direction: column;  /* make in the middle but colum */
+justify-content: center;  /* make donw in the middle all detial */
+align-items: center; /* to make in the middle */
+text-align: center;/* to make in the middle */ 
+
+}
+
+
+.hero h3 {
+
+
+padding: 3rem;
+
+}
+
+
+
+
+/* benefits seciton */
+
+
+#locations{
+
+min-height: 120vh;
+background: linear-gradient(rgba(0,0,0,0.5),transparent),
+url("img/new-york-page.png");
+background-size: cover;
+background-position: center;
+align-items: center;
+display: flex;
+position: relative;
+overflow: hidden; /* help to hide the sky the space that will nt apper in another place */
+
+
+
+} 
+
+
+.locations-head {
+
+width: 90%;
+margin: auto;
+
+
+}
+
+
+.locations-head h2 {
+
+padding: 1rem 0rem;
+text-decoration: underline;
+
+
+}
+
+
+
+
+
+
+.locations-head h3 {
+
+
+padding: 4rem 0rem;
+/*background: linear-gradient(#131c27,#663b34);
+background-clip: text;
+-webkit-text-fill-color: transparent;*/
+font-size: 33px;
+
+}
+
+.cloud {
+
+    position: absolute;
+    top: 0%;
+    right: 0%;
+
+
+}
+
+
+.moving-cloud-1 {
+
+    animation: cloudAnimation 3s infinite alternate ease-in-out;
+
+
+}
+
+
+.moving-cloud-2 {
+
+top: 20%;
+z-index: -1;
+opacity: 2;  /* used to mix the img and number can change */
+animation: cloudAnimation 4s infinite alternate ease-in-out;
+
+    
+}
+
+@keyframes cloudAnimation {
+
+from{  /* used from bottom to end thr to */
+
+
+    transform: translate(10%,-10%);  /* moiving sky */
+
+}
+to {
+
+    transform: translate(0%,0%);
+
+}
+
+}
+
+
+/* benefits section */
+
+
+.benefits-head {
+
+background: #343c44;
+padding: 3rem ;
+min-height: 30vh;
+display: flex;
+flex-direction: column; /* flap the sentest back */
+justify-content: center;
+align-items: center;
+color: white;
+text-align: center;
+
+
+
+}
+
+.benefits-head h3 {
+
+padding: 1rem;
+
+}
+
+
+
+
+.cards {
+
+width: 90%;
+margin: auto;
+display: flex; /* all card comee next each other */
+min-height: 70vh;
+align-items: center;
+flex-wrap: wrap; /* to change to respsive on the phone will be moore resposvie like mobile */
+
+
+
+
+
+}
+
+
+.card {
+
+
+    text-align: center;
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: 2rem  5rem;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1), 0px 20px 20px rgba(0,0,0,0.1);  /* 
+    firest one for shadow sencd one to make anoher shadow above it*/
+
+
+}
+
+
+.cards img {
+
+height: 50px;
+margin: 2rem;
+
+
+}
+
+
+.card h4 {
+
+    padding: 1rem;
+    font-size: 22px;
+    line-height: 2;  /* the space between the senter */
+
+}
+
+.card h1 {
+
+    padding: 1rem; /* to make the box in sizeng */
+    font-size: 22px;
+    color: black;
+    line-height: 2;
+
+}
+
+
+
+.card-icon {
+
+background: #27394e;
+
+}
+
+
+
+#Contact {
+
+min-height: 100vh;
+background: linear-gradient(rgba(0,0,0,0.5),transparent), 
+url("img/mountain.png");
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+
+
+.form-wrapper {
+
+background: rgba(19,28,39,0.8);
+width: 60%;
+color: white;
+border-radius: 20px;  /* to make the box shipp or nice */
+ 
+
+}
+
+
+
+.form-head {
+
+text-align: center;
+padding: 4rem;
+
+
+}
+
+
+.name-form,.email-form {
+
+padding: 3rem;
+text-align: center;
+
+
+}
+
+
+.form-wrapper label {
+
+margin: 0rem 3rem;
+
+
+}
+
+
+.form-wrapper button {
+
+width: 100%;
+padding: 2rem;
+margin-top: 8rem;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+
+}
+
+
+
+.form-wrapper input{
+
+    padding: 1rem 3rem;
+
+
+}
+
+
+
+
+footer {
+
+color: white;
+background: rgba(19,28,39,1);
+
+
+}
+
+
+.footer-wrapper {
+
+display: flex;
+padding: 2rem;
+width: 90%;
+margin: auto;
+align-items: center;
+min-height: 10vh;
+flex-wrap: wrap;
+
+
+}
+
+
+
+
+footer h5{
+flex: 1 1 40rem;
+
+}
+
+
+footer ul{
+
+display: flex;
+list-style: none;
+flex:1 1 40rem;
+justify-content: space-around;
+align-items: center;
+
+
+}
+
+
+button:focus {
+
+    background: #2c3f57;
+    outline-style: solid;
+    outline-color:cornflowerblue ;
+    
+    
+    }
+    
+    
+
+
+
+
+/* media query */
+
+@media screen and (max-width: 932px) {
+ 
+     html{
+
+   font-size: 45%;
+
+     }
+
+
+
+    nav {
+
+    text-align: center;
+
+    }
+
+    #logo {
+        
+        padding: 2rem;
+
+    }
+
+    .cloud {
+     
+         height: 40rem;
+         pointer-events: none;
+
+    }
+
+  .moving-cloud-1 {
+      z-index: -1;
+  }
+.moving-cloud-2 {
+    z-index: -2;
+}
+
+.locations-head h3 {
+
+background: rgba(19,28,39,0.9);
+-webkit-text-fill-color:white;
+
+}
+
+
+.form-wrapper {
+
+width: 70%;
+
+}
+
+
+
+footer {
+
+    text-align: center;
+
+}
+
+footer h5 {
+
+padding-bottom: 3rem;
+
+}
+
+
+}
+
+
